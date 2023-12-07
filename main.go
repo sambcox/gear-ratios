@@ -3,7 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"github.com/sambcox/calibration-values/calibrationValues"
+	"github.com/sambcox/gear-ratios/schematicCalculator"
 	"os"
 )
 
@@ -25,7 +25,7 @@ func main() {
 		fmt.Println("Error reading file:", err)
 	}
 
-	schematicSum := schematicCalculator.CalculateSchematicSum(lines)
+	schematicSum := schematiccalculator.CalculateSchematicSum(lines)
 
 	fmt.Println("Sum of part numbers:", schematicSum)
 }
